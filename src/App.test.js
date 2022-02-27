@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import App from "./App";
 
 describe("Counter", () => {
-  test("increase when the increment button in clicked", () => {
+  it("should increase when the increment button in clicked", () => {
     render(<App />);
 
     const button = screen.getByText(/increase/i);
@@ -12,7 +12,7 @@ describe("Counter", () => {
     expect(paragraph).toHaveTextContent(/1/i);
   });
 
-  test("decrease when the decrement button in clicked", () => {
+  it("should decrease when the decrement button in clicked", () => {
     render(<App />);
 
     const button = screen.getByText(/decrease/i);
