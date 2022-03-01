@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <button>Decrease</button>
-      <p data-testid="counter">{number}</p>
+      <p>{number}</p>
       <button>Increase</button>
     </div>
   );
