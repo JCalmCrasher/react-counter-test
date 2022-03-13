@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-function App() {
+export default function App() {
   const [number, setNumber] = useState(0);
   return (
     <div className="App">
@@ -11,5 +11,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
